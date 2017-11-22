@@ -1,0 +1,53 @@
+elif (hasilcar1 == '26'): #KIRIM PESAN PERSIAPKAN DIRI ANDA
+            print "PERSIAPKAN DIRI ANDA"
+            time.sleep
+            break
+        elif (hasil == 26):
+            while True:
+                kirimpesan = "INSERT INTO outbox (DestinationNumber, TextDecoded, CreatorID) values ('%s','%s','%s')" % (nomor,'Ketinggian Air : %s' % hasil+' cm, Status PERSIAPKAN DIRI ANDA','GAMMU')
+                cur.execute(kirimpesan)
+                konek.commit
+                print "BERHASIL MENGIRIM KE ", nomor
+                time.sleep(1)
+                break
+        elif (hasilcar1 == '21'): #KIRIM PESAN SIAGA I
+            print "SIAGA I"
+            time.sleep
+            break
+        elif (hasil == 21):
+            while True:
+                kirimpesan = "INSERT INTO outbox (DestinationNumber, TextDecoded, CreatorID) values ('%s','%s','%s')" % (nomor,'Ketinggian Air : %s' % hasil+' cm, Status SIAGA I','GAMMU')
+                cur.execute(kirimpesan)
+                konek.commit
+                print "BERHASIL MENGIRIM KE ", nomor
+                time.sleep(1)
+                break
+        elif (hasilcar1 == '16'): #KIRIM PESAN SIAGA II
+            print "SIAGA II"
+            time.sleep
+            break
+        elif (hasil == 16):
+            while True:
+                kirimpesan = "INSERT INTO outbox (DestinationNumber, TextDecoded, CreatorID) values ('%s','%s','%s')" % (nomor,'Ketinggian Air : %s' % hasil+' cm, Status SIAGA II','GAMMU')
+                cur.execute(kirimpesan)
+                konek.commit
+                print "BERHASIL MENGIRIM KE ", nomor
+                time.sleep(1)
+                break
+        elif (hasilcar1 == '-2'): #KIRIM PESAN SURUT
+            print "SURUT"
+            time.sleep
+            break
+        elif (hasil == -2):
+            while True:
+                kirimpesan = "INSERT INTO outbox (DestinationNumber, TextDecoded, CreatorID) values ('%s','%s','%s')" % (nomor,'Ketinggian Air : %s' % hasil+' cm, Status SURUT','GAMMU')
+                cur.execute(kirimpesan)
+                konek.commit
+                print "BERHASIL MENGIRIM KE ", nomor
+                time.sleep(1)
+                break
+
+
+
+
+http://bpbd.jakarta.go.id/waterlevel
